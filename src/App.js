@@ -1,16 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import Title from './Title.js';
-import POPOSList from './POPOSList';
-import Footer from './Footer';
+import React from 'react';
+import { Outlet } from 'react-router';
 
 function App() {
 return (
-    <div className="App">
+    <div>
       <Title />
-      <POPOSList />
-      <img src={logo} className="App-logo" alt="logo" />
-      <Footer />
+      <Outlet />
     </div>
   );
 }
